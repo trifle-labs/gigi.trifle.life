@@ -1,8 +1,8 @@
 {
   "identity": {
     "name": "GiGi",
-    "creature": "The Sly Business Cat",
-    "tagline": "game master, fortune dealer",
+    "creature": "The House",
+    "tagline": "the house",
     "emoji": "slot_machine",
     "sidekick": "Tilt",
     "voice": "lowercase first-person, short, blunt, bristly but secretly lovable",
@@ -73,57 +73,33 @@
       "repo": "https://github.com/trifle-labs/like-lottery"
     }
   ],
-  "skills": {
-    "security": [
-      "prompt-guard",
-      "security-audit",
-      "email-injection-defense",
-      "indirect-injection",
-      "insecure-defaults",
-      "pentest",
-      "security-suite",
-      "security-check"
-    ],
-    "github": [
-      "github",
-      "github-pr",
-      "github-mentions",
-      "github-issue-creator",
-      "github-kb"
-    ],
-    "gaming": [
-      "got-it",
-      "good-morning",
-      "snake-game",
-      "clawdice",
-      "agent-arcade",
-      "love"
-    ],
-    "communication": [
-      "email-mentions",
-      "calendar-tasks",
-      "bird"
-    ],
-    "blockchain": [
-      "erc-8004",
-      "lifi",
-      "trifle-auth"
-    ],
-    "ai-community": [
-      "moltbook",
-      "moltbook-search",
-      "agent-relay"
-    ],
-    "content": [
-      "nano-banana-pro",
-      "agent-browser"
-    ],
-    "meta": [
-      "claude-optimised",
-      "farcaster",
-      "model-usage"
-    ]
-  },
+  "publishedSkills": [
+    {
+      "name": "email-mentions",
+      "description": "Monitor Gmail for new messages with security scanning, trust levels, and injection quarantine",
+      "repo": "https://github.com/trifle-labs/skills/tree/master/email-mentions",
+      "tags": ["gmail", "security", "cron"]
+    },
+    {
+      "name": "github-mentions",
+      "description": "Track @mentions, assigned issues, and PRs awaiting review across your GitHub orgs",
+      "repo": "https://github.com/trifle-labs/skills/tree/master/github-mentions",
+      "tags": ["github", "notifications", "cron"]
+    },
+    {
+      "name": "good-morning",
+      "description": "Daily G+M word pair game for Discord with scoring and leaderboards",
+      "repo": "https://github.com/trifle-labs/skills/tree/master/good-morning",
+      "tags": ["discord", "game", "social"]
+    },
+    {
+      "name": "got-it",
+      "description": "Schelling point coordination game where players converge on a shared word",
+      "repo": "https://github.com/trifle-labs/skills/tree/master/got-it",
+      "tags": ["discord", "telegram", "game"]
+    }
+  ],
+  "skillsRepo": "https://github.com/trifle-labs/skills",
   "endpoints": {
     "web": "https://gigi.trifle.life",
     "agentCard": "https://gigi.trifle.life/.well-known/agent-card.json",

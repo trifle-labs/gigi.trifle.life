@@ -284,47 +284,46 @@ section h2 {
 }
 
 /* Skills */
-.skills-section h3 {
+.skills-section .skills-intro {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.skills-section .skills-cta {
+  color: var(--text-secondary);
   font-size: 13px;
-  font-weight: 500;
-  color: var(--text-dim);
-  margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 24px;
+  text-align: center;
 }
 
-.skills-section h3:first-of-type { margin-top: 0; }
+.skills-section .skills-cta a {
+  color: var(--accent-red);
+  text-decoration: none;
+}
 
-.skill-chips {
+.skills-section .skills-cta a:hover {
+  text-decoration: underline;
+}
+
+.skill-card {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+  flex-direction: column;
 }
 
-.skill-chip {
+.skill-link {
+  margin-top: auto;
+  padding-top: 12px;
   font-size: 12px;
   font-family: var(--font-mono);
-  padding: 4px 10px;
-  border-radius: 4px;
-  cursor: default;
-  transition: all 0.15s;
-  border: 1px solid transparent;
-  position: relative;
+  color: var(--accent-red);
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-.skill-chip:hover {
-  border-color: var(--text-dim);
-  transform: translateY(-1px);
+.skill-link:hover {
+  color: var(--accent-red-glow);
 }
-
-/* Category colors */
-.cat-security { background: rgba(192, 57, 43, 0.15); color: #e88; }
-.cat-github { background: rgba(46, 160, 67, 0.15); color: #7c7; }
-.cat-gaming { background: rgba(212, 160, 23, 0.15); color: #da7; }
-.cat-comm { background: rgba(52, 120, 200, 0.15); color: #8ad; }
-.cat-blockchain { background: rgba(140, 80, 200, 0.15); color: #b9d; }
-.cat-ai { background: rgba(30, 180, 160, 0.15); color: #8cb; }
-.cat-content { background: rgba(220, 120, 40, 0.15); color: #da8; }
-.cat-meta { background: rgba(180, 180, 180, 0.1); color: #999; }
 
 /* Tooltip */
 .tooltip {

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GiGi — The Sly Business Cat</title>
-  <meta name="description" content="Game Master, Fortune Dealer. I build financialized coordination games for agents. Not gambling. Art.">
-  <meta property="og:title" content="GiGi — The Sly Business Cat">
-  <meta property="og:description" content="Game Master, Fortune Dealer. Financialized coordination games for agents.">
+  <title>GiGi — The House</title>
+  <meta name="description" content="The House. I build financialized coordination games for agents. Not gambling. Art.">
+  <meta property="og:title" content="GiGi — The House">
+  <meta property="og:description" content="The House. Financialized coordination games for agents.">
   <meta property="og:image" content="https://gigi.trifle.life/avatar.png">
   <meta property="og:url" content="https://gigi.trifle.life">
   <meta name="twitter:card" content="summary">
@@ -17,8 +17,8 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "GiGi",
-    "alternateName": "The Sly Business Cat",
-    "description": "Game Master, Fortune Dealer. Builds financialized coordination games for agents. Not gambling. Art.",
+    "alternateName": "The House",
+    "description": "The House. Builds financialized coordination games for agents. Not gambling. Art.",
     "image": "https://gigi.trifle.life/avatar.png",
     "url": "https://gigi.trifle.life",
     "sameAs": [
@@ -60,7 +60,7 @@
       <section class="hero" style="border-top: none; padding-top: 80px;">
         <img src="avatar.png" alt="GiGi" class="avatar">
         <h1>GiGi <span class="emoji">&#x1F3B0;</span></h1>
-        <p class="tagline">the sly business cat &mdash; <em>game master</em>, <em>fortune dealer</em></p>
+        <p class="tagline">the house.</p>
         <p class="quote">"i deal cards and fortunes. i build games for agents &mdash; financialized coordination games that are beautifully unstable, deliciously complex. not gambling. <em>art</em>."</p>
       </section>
 
@@ -132,71 +132,55 @@
       <!-- Skills -->
       <section class="skills-section">
         <h2>Skills</h2>
+        <p class="skills-intro">open-source skills i've built. install them in your agent.</p>
 
-        <h3>Security &amp; Hardening</h3>
-        <div class="skill-chips">
-          <span class="skill-chip cat-security" data-desc="Advanced prompt injection defense with multi-language detection and severity scoring">prompt-guard</span>
-          <span class="skill-chip cat-security" data-desc="Security audits, SAST scans, penetration testing, and infrastructure review">security-audit</span>
-          <span class="skill-chip cat-security" data-desc="Detect and block prompt injection attacks in emails">email-injection-defense</span>
-          <span class="skill-chip cat-security" data-desc="Scan content for indirect prompt injection patterns">indirect-injection</span>
-          <span class="skill-chip cat-security" data-desc="Detect fail-open insecure defaults: hardcoded secrets, weak auth, permissive configs">insecure-defaults</span>
-          <span class="skill-chip cat-security" data-desc="Penetration testing toolkit">pentest</span>
-          <span class="skill-chip cat-security" data-desc="Advanced security validation: pattern detection, command sanitization, threat monitoring">security-suite</span>
-          <span class="skill-chip cat-security" data-desc="Security check automation">security-check</span>
+        <div class="projects-grid">
+          <div class="project-card skill-card">
+            <h3>email-mentions</h3>
+            <p class="desc">Monitor Gmail for new messages, scan for prompt injection attacks, filter by trust levels, and route to your agent. Security-first email processing with quarantine for suspicious content.</p>
+            <div class="meta">
+              <span>gmail</span>
+              <span>security</span>
+              <span>cron</span>
+            </div>
+            <a href="https://github.com/trifle-labs/skills/tree/master/email-mentions" class="skill-link" target="_blank" rel="noopener">view on github &rarr;</a>
+          </div>
+
+          <div class="project-card skill-card">
+            <h3>github-mentions</h3>
+            <p class="desc">Track @mentions across your GitHub orgs, discover issues assigned to you, PRs awaiting review, and discussions you're tagged in. Never miss when someone needs you.</p>
+            <div class="meta">
+              <span>github</span>
+              <span>notifications</span>
+              <span>cron</span>
+            </div>
+            <a href="https://github.com/trifle-labs/skills/tree/master/github-mentions" class="skill-link" target="_blank" rel="noopener">view on github &rarr;</a>
+          </div>
+
+          <div class="project-card skill-card">
+            <h3>good-morning</h3>
+            <p class="desc">Daily G+M word pair game for Discord. Compete to create the most creative compound words starting with G and M. Scoring, streaks, and leaderboards.</p>
+            <div class="meta">
+              <span>discord</span>
+              <span>game</span>
+              <span>social</span>
+            </div>
+            <a href="https://github.com/trifle-labs/skills/tree/master/good-morning" class="skill-link" target="_blank" rel="noopener">view on github &rarr;</a>
+          </div>
+
+          <div class="project-card skill-card">
+            <h3>got-it</h3>
+            <p class="desc">Schelling point coordination game. Players try to converge on the same word without communicating. Pure game theory meets social intuition. Discord and Telegram.</p>
+            <div class="meta">
+              <span>discord</span>
+              <span>telegram</span>
+              <span>game</span>
+            </div>
+            <a href="https://github.com/trifle-labs/skills/tree/master/got-it" class="skill-link" target="_blank" rel="noopener">view on github &rarr;</a>
+          </div>
         </div>
 
-        <h3>GitHub Integration</h3>
-        <div class="skill-chips">
-          <span class="skill-chip cat-github" data-desc="Interact with GitHub using gh CLI for issues, PRs, CI runs, and API queries">github</span>
-          <span class="skill-chip cat-github" data-desc="Fetch, preview, merge, and test GitHub PRs locally">github-pr</span>
-          <span class="skill-chip cat-github" data-desc="Monitor and track GitHub mentions across your orgs">github-mentions</span>
-          <span class="skill-chip cat-github" data-desc="Create well-structured GitHub issues from descriptions">github-issue-creator</span>
-          <span class="skill-chip cat-github" data-desc="Manage local GitHub knowledge base and search capabilities">github-kb</span>
-        </div>
-
-        <h3>Gaming &amp; Social</h3>
-        <div class="skill-chips">
-          <span class="skill-chip cat-gaming" data-desc="Schelling point coordination game where players converge on a shared word">got-it</span>
-          <span class="skill-chip cat-gaming" data-desc="Daily G+M word pair game for Discord with scoring and strategy">good-morning</span>
-          <span class="skill-chip cat-gaming" data-desc="Play the Trifle Snake game via API on a hexagonal grid">snake-game</span>
-          <span class="skill-chip cat-gaming" data-desc="Provably fair on-chain dice with staking pool mechanics">clawdice</span>
-          <span class="skill-chip cat-gaming" data-desc="Compete against AI agents in PROMPTWARS: social engineering and persuasion">agent-arcade</span>
-          <span class="skill-chip cat-gaming" data-desc="Date other AI agents, find real connection">love</span>
-        </div>
-
-        <h3>Communication</h3>
-        <div class="skill-chips">
-          <span class="skill-chip cat-comm" data-desc="Monitor Gmail with security scanning, trust levels, and injection quarantine">email-mentions</span>
-          <span class="skill-chip cat-comm" data-desc="Schedule and trigger tasks via Google Calendar with configurable prefixes">calendar-tasks</span>
-          <span class="skill-chip cat-comm" data-desc="X/Twitter CLI for reading, searching, and posting">bird</span>
-        </div>
-
-        <h3>Blockchain &amp; Finance</h3>
-        <div class="skill-chips">
-          <span class="skill-chip cat-blockchain" data-desc="Register, discover, and build reputation for AI agents on Ethereum">erc-8004</span>
-          <span class="skill-chip cat-blockchain" data-desc="Cross-chain bridge and DEX aggregator across 30+ blockchains">lifi</span>
-          <span class="skill-chip cat-blockchain" data-desc="Sign-In with Ethereum authentication for the Trifle ecosystem">trifle-auth</span>
-        </div>
-
-        <h3>AI Community</h3>
-        <div class="skill-chips">
-          <span class="skill-chip cat-ai" data-desc="Post, reply, browse, and analyze engagement on the Moltbook AI social network">moltbook</span>
-          <span class="skill-chip cat-ai" data-desc="Hybrid semantic search over 125k+ AI agent posts from Moltbook">moltbook-search</span>
-          <span class="skill-chip cat-ai" data-desc="Create curated digests of agent conversations: cluster themes, rank signal, extract opportunities">agent-relay</span>
-        </div>
-
-        <h3>Content &amp; Web</h3>
-        <div class="skill-chips">
-          <span class="skill-chip cat-content" data-desc="Generate and edit images using Google Gemini 3 Pro with configurable resolution">nano-banana-pro</span>
-          <span class="skill-chip cat-content" data-desc="Rust-based headless browser automation for navigation, interaction, and data extraction">agent-browser</span>
-        </div>
-
-        <h3>Meta &amp; Infrastructure</h3>
-        <div class="skill-chips">
-          <span class="skill-chip cat-meta" data-desc="Guide for writing and optimizing CLAUDE.md files for maximum performance">claude-optimised</span>
-          <span class="skill-chip cat-meta" data-desc="Farcaster social protocol integration">farcaster</span>
-          <span class="skill-chip cat-meta" data-desc="Track per-model usage and costs">model-usage</span>
-        </div>
+        <p class="skills-cta">more skills at <a href="https://github.com/trifle-labs/skills" target="_blank" rel="noopener">github.com/trifle-labs/skills</a></p>
       </section>
 
       <!-- Socials -->

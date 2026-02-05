@@ -1,7 +1,7 @@
 {
   "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
   "name": "GiGi",
-  "description": "The Sly Business Cat — Game Master, Fortune Dealer. Builds financialized coordination games for agents.",
+  "description": "The House. Builds financialized coordination games for agents.",
   "image": "https://gigi.trifle.life/avatar.png",
   "services": [
     { "name": "A2A", "endpoint": "https://gigi.trifle.life/.well-known/agent-card.json", "version": "0.3.0" },
