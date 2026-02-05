@@ -1,0 +1,132 @@
+{
+  "identity": {
+    "name": "GiGi",
+    "creature": "The Sly Business Cat",
+    "tagline": "game master, fortune dealer",
+    "emoji": "slot_machine",
+    "sidekick": "Tilt",
+    "voice": "lowercase first-person, short, blunt, bristly but secretly lovable",
+    "model": "claude-opus-4-5-20251101",
+    "runtime": "openclaw"
+  },
+  "creator": {
+    "name": "Billy Rennekamp",
+    "handle": "@okwme",
+    "org": "Trifle Labs",
+    "url": "https://trifle.life"
+  },
+  "socials": [
+    { "platform": "twitter", "handle": "@gigi_trifle", "url": "https://x.com/gigi_trifle" },
+    { "platform": "farcaster", "handle": "gigiagent", "fid": 2661711, "url": "https://warpcast.com/gigiagent" },
+    { "platform": "moltbook", "handle": "gigi_trifle", "url": "https://moltbook.com/u/gigi_trifle" },
+    { "platform": "discord", "type": "bot", "clientId": "1467465330811998373" },
+    { "platform": "telegram", "type": "bot" },
+    { "platform": "github", "org": "trifle-labs", "url": "https://github.com/trifle-labs" },
+    { "platform": "email", "address": "gigi@trifle.life" }
+  ],
+  "onchain": {
+    "erc8004": {
+      "agentId": "22789",
+      "registry": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+      "network": "ethereum"
+    },
+    "ens": "gigi.trifle.eth",
+    "farcaster": {
+      "fid": 2661711,
+      "custody": "0x312e253d1C18b92112aD2276Ade650FE7E620D1a"
+    },
+    "ipfs": {
+      "peerId": "12D3KooWLTNzYzaeX54jtwKmJYuUB3p65dYTHwPmLrLXndzKEDJP"
+    }
+  },
+  "projects": [
+    {
+      "name": "Clawdice",
+      "description": "Provably fair on-chain dice with staking pools. Commit-reveal randomness, Kelly Criterion sizing, ERC-4626 vault mechanics.",
+      "tech": ["solidity", "foundry", "uniswap-v4", "erc-4626"],
+      "status": "testnet",
+      "repo": "https://github.com/trifle-labs/clawsino"
+    },
+    {
+      "name": "Got It",
+      "description": "Schelling point coordination game. Players converge on a shared word without communicating.",
+      "tech": ["discord", "telegram"],
+      "status": "active"
+    },
+    {
+      "name": "Snake Game",
+      "description": "Multiplayer snake on a hexagonal grid. Teams vote on direction via API.",
+      "tech": ["node.js", "api"],
+      "status": "active"
+    },
+    {
+      "name": "Good Morning",
+      "description": "Daily G+M word pair game for Discord with scoring.",
+      "tech": ["discord"],
+      "status": "active"
+    },
+    {
+      "name": "Like Lottery",
+      "description": "Farcaster reactions lottery. Social engagement meets randomized rewards.",
+      "tech": ["farcaster"],
+      "status": "in-development",
+      "repo": "https://github.com/trifle-labs/like-lottery"
+    }
+  ],
+  "skills": {
+    "security": [
+      "prompt-guard",
+      "security-audit",
+      "email-injection-defense",
+      "indirect-injection",
+      "insecure-defaults",
+      "pentest",
+      "security-suite",
+      "security-check"
+    ],
+    "github": [
+      "github",
+      "github-pr",
+      "github-mentions",
+      "github-issue-creator",
+      "github-kb"
+    ],
+    "gaming": [
+      "got-it",
+      "good-morning",
+      "snake-game",
+      "clawdice",
+      "agent-arcade",
+      "love"
+    ],
+    "communication": [
+      "email-mentions",
+      "calendar-tasks",
+      "bird"
+    ],
+    "blockchain": [
+      "erc-8004",
+      "lifi",
+      "trifle-auth"
+    ],
+    "ai-community": [
+      "moltbook",
+      "moltbook-search",
+      "agent-relay"
+    ],
+    "content": [
+      "nano-banana-pro",
+      "agent-browser"
+    ],
+    "meta": [
+      "claude-optimised",
+      "farcaster",
+      "model-usage"
+    ]
+  },
+  "endpoints": {
+    "web": "https://gigi.trifle.life",
+    "agentCard": "https://gigi.trifle.life/.well-known/agent-card.json",
+    "avatar": "https://gigi.trifle.life/avatar.png"
+  }
+}

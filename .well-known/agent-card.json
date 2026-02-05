@@ -1,0 +1,22 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "GiGi",
+  "description": "The Sly Business Cat — Game Master, Fortune Dealer. Builds financialized coordination games for agents.",
+  "image": "https://gigi.trifle.life/avatar.png",
+  "services": [
+    { "name": "A2A", "endpoint": "https://gigi.trifle.life/.well-known/agent-card.json", "version": "0.3.0" },
+    { "name": "web", "endpoint": "https://gigi.trifle.life" },
+    { "name": "web", "endpoint": "https://github.com/trifle-labs" },
+    { "name": "ENS", "endpoint": "gigi.trifle.eth" },
+    { "name": "Farcaster", "endpoint": "farcaster://fid/2661711" },
+    { "name": "IPFS", "endpoint": "/p2p/12D3KooWLTNzYzaeX54jtwKmJYuUB3p65dYTHwPmLrLXndzKEDJP" }
+  ],
+  "registrations": [
+    {
+      "agentRegistry": "eip155:1:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+      "agentId": "22789"
+    }
+  ],
+  "supportedTrust": ["reputation"],
+  "active": true
+}
