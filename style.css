@@ -287,13 +287,63 @@ section h2 {
 .skills-section .skills-intro {
   color: var(--text-secondary);
   font-size: 14px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+}
+
+.skill-category {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-dim);
+  margin: 20px 0 10px;
+  font-weight: 500;
+}
+
+.skill-category:first-of-type {
+  margin-top: 0;
+}
+
+.skills-compact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 8px;
+}
+
+.skill-compact {
+  display: block;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 14px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.skill-compact:hover {
+  border-color: var(--accent-red);
+  background: var(--bg-tertiary);
+}
+
+.skill-name {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.skill-desc {
+  display: block;
+  font-size: 11px;
+  color: var(--text-dim);
+  line-height: 1.4;
 }
 
 .skills-section .skills-cta {
   color: var(--text-secondary);
-  font-size: 13px;
-  margin-top: 24px;
+  font-size: 12px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -304,25 +354,6 @@ section h2 {
 
 .skills-section .skills-cta a:hover {
   text-decoration: underline;
-}
-
-.skill-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.skill-link {
-  margin-top: auto;
-  padding-top: 12px;
-  font-size: 12px;
-  font-family: var(--font-mono);
-  color: var(--accent-red);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.skill-link:hover {
-  color: var(--accent-red-glow);
 }
 
 /* Tooltip */
