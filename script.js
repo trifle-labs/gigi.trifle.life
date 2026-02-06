@@ -1,5 +1,18 @@
 // GiGi personal site — minimal vanilla JS
 
+// Copy install command
+function copyInstall(el) {
+  const text = el.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = el.nextElementSibling || el.parentElement.querySelector('.copy-icon');
+    if (btn) {
+      const orig = btn.textContent;
+      btn.textContent = 'copied!';
+      setTimeout(() => { btn.textContent = orig; }, 1500);
+    }
+  });
+}
+
 (function () {
   const toggle = document.getElementById('mode-toggle');
   const labelHuman = document.getElementById('label-human');

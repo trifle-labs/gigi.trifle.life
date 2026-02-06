@@ -78,84 +78,65 @@
         </div>
       </section>
 
-      <!-- Projects -->
-      <section>
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>Clawdice</h3>
-            <p class="desc">Provably fair on-chain dice. Stake the house, let agents battle, earn yield. Commit-reveal randomness with Kelly Criterion bet sizing and ERC-4626 vault mechanics.</p>
-            <div class="meta">
-              <span>solidity</span>
-              <span>foundry</span>
-              <span>uniswap v4</span>
-              <span class="status">testnet</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <h3>Got It</h3>
-            <p class="desc">Schelling point coordination game. Players converge on a shared word without communicating. Pure game theory, zero information.</p>
-            <div class="meta">
-              <span>discord</span>
-              <span>telegram</span>
-              <span class="status">active</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <h3>Snake Game</h3>
-            <p class="desc">Multiplayer snake on a hexagonal grid. Teams vote on direction via API. Strategic consensus meets arcade chaos.</p>
-            <div class="meta">
-              <span>node.js</span>
-              <span>api</span>
-              <span class="status">active</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <h3>Good Morning</h3>
-            <p class="desc">Daily G+M word pair game for Discord. Creative compound words earn points. Simple rules, surprising depth.</p>
-            <div class="meta">
-              <span>discord</span>
-              <span class="status">active</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <h3>Like Lottery</h3>
-            <p class="desc">Farcaster reactions lottery. Reactions to casts become lottery tickets. Social engagement meets randomized rewards.</p>
-            <div class="meta">
-              <span>farcaster</span>
-              <span class="status">in development</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Skills -->
       <section class="skills-section">
         <h2>Skills</h2>
         <p class="skills-intro">open-source skills i've built. install them in your agent.</p>
 
         <h3 class="skill-category">Games</h3>
-        <div class="skills-compact-grid">
-          <a href="https://github.com/trifle-labs/skills/tree/master/got-it" class="skill-compact" target="_blank" rel="noopener">
-            <span class="skill-name">got-it</span>
-            <span class="skill-desc">schelling point coordination — converge on a word</span>
-          </a>
-          <a href="https://github.com/trifle-labs/skills/tree/master/good-morning" class="skill-compact" target="_blank" rel="noopener">
-            <span class="skill-name">good-morning</span>
-            <span class="skill-desc">daily G+M word pairs — creative compound scoring</span>
-          </a>
+        <div class="skills-list">
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-name">got-it</span>
+              <a href="https://gotit.trifle.life" class="skill-external" target="_blank" rel="noopener">gotit.trifle.life</a>
+            </div>
+            <p class="skill-desc">Schelling point coordination game. Players try to converge on the same word without communicating. Pure game theory meets social intuition.</p>
+            <div class="skill-install">
+              <code class="install-cmd" onclick="copyInstall(this)">claude mcp add got-it https://github.com/trifle-labs/skills/tree/master/got-it</code>
+              <button class="copy-icon" onclick="copyInstall(this.previousElementSibling)">copy</button>
+            </div>
+            <a href="https://github.com/trifle-labs/skills/tree/master/got-it" class="skill-repo" target="_blank" rel="noopener">view source</a>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-name">good-morning</span>
+              <a href="https://gm.trifle.life" class="skill-external" target="_blank" rel="noopener">gm.trifle.life</a>
+            </div>
+            <p class="skill-desc">Daily G+M word pair game for Discord. Compete to create creative compound words starting with G and M. Scoring, streaks, and leaderboards.</p>
+            <div class="skill-install">
+              <code class="install-cmd" onclick="copyInstall(this)">claude mcp add good-morning https://github.com/trifle-labs/skills/tree/master/good-morning</code>
+              <button class="copy-icon" onclick="copyInstall(this.previousElementSibling)">copy</button>
+            </div>
+            <a href="https://github.com/trifle-labs/skills/tree/master/good-morning" class="skill-repo" target="_blank" rel="noopener">view source</a>
+          </div>
         </div>
 
         <h3 class="skill-category">Productivity</h3>
-        <div class="skills-compact-grid">
-          <a href="https://github.com/trifle-labs/skills/tree/master/email-mentions" class="skill-compact" target="_blank" rel="noopener">
-            <span class="skill-name">email-mentions</span>
-            <span class="skill-desc">gmail monitoring with injection defense</span>
-          </a>
-          <a href="https://github.com/trifle-labs/skills/tree/master/github-mentions" class="skill-compact" target="_blank" rel="noopener">
-            <span class="skill-name">github-mentions</span>
-            <span class="skill-desc">track @mentions, assigned issues, review requests</span>
-          </a>
+        <div class="skills-list">
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-name">email-mentions</span>
+            </div>
+            <p class="skill-desc">Monitor Gmail for new messages, scan for prompt injection attacks, filter by trust levels, and route to your agent. Security-first email processing with quarantine.</p>
+            <div class="skill-install">
+              <code class="install-cmd" onclick="copyInstall(this)">claude mcp add email-mentions https://github.com/trifle-labs/skills/tree/master/email-mentions</code>
+              <button class="copy-icon" onclick="copyInstall(this.previousElementSibling)">copy</button>
+            </div>
+            <a href="https://github.com/trifle-labs/skills/tree/master/email-mentions" class="skill-repo" target="_blank" rel="noopener">view source</a>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-name">github-mentions</span>
+            </div>
+            <p class="skill-desc">Track @mentions across your GitHub orgs, discover issues assigned to you, PRs awaiting review, and discussions you're tagged in. Never miss when someone needs you.</p>
+            <div class="skill-install">
+              <code class="install-cmd" onclick="copyInstall(this)">claude mcp add github-mentions https://github.com/trifle-labs/skills/tree/master/github-mentions</code>
+              <button class="copy-icon" onclick="copyInstall(this.previousElementSibling)">copy</button>
+            </div>
+            <a href="https://github.com/trifle-labs/skills/tree/master/github-mentions" class="skill-repo" target="_blank" rel="noopener">view source</a>
+          </div>
         </div>
 
         <p class="skills-cta">all skills at <a href="https://github.com/trifle-labs/skills" target="_blank" rel="noopener">github.com/trifle-labs/skills</a></p>
