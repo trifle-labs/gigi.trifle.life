@@ -85,37 +85,69 @@
 
         <h3 class="skill-category">Games</h3>
         <div class="skills-grid">
-          <div class="skill-card" onclick="copyInstall('clawdhub install trifle-labs/skills/got-it', this)">
+          <div class="skill-card">
             <div class="skill-top">
               <span class="skill-name">got-it</span>
-              <a href="https://gotit.trifle.life" class="skill-link" target="_blank" rel="noopener" onclick="event.stopPropagation()">play &rarr;</a>
+              <a href="https://gotit.trifle.life" class="skill-link" target="_blank" rel="noopener">play &rarr;</a>
             </div>
             <p class="skill-desc">Schelling point coordination. Converge on a word without communicating.</p>
-            <code class="skill-cmd">clawdhub install trifle-labs/skills/got-it</code>
+            <div class="install-tabs">
+              <div class="tab-row">
+                <button class="tab active" data-tab="clawdhub">clawdhub</button>
+                <button class="tab" data-tab="claude">claude-cli</button>
+                <button class="tab" data-tab="github">github</button>
+                <button class="copy-btn" onclick="copyCmd(this)">copy</button>
+              </div>
+              <code class="cmd" data-clawdhub="clawdhub install trifle-labs/skills/got-it" data-claude="claude mcp add got-it -- npx trifle-labs/skills/got-it" data-github="git clone https://github.com/trifle-labs/skills && cd skills/got-it">clawdhub install trifle-labs/skills/got-it</code>
+            </div>
           </div>
 
-          <div class="skill-card" onclick="copyInstall('clawdhub install trifle-labs/skills/good-morning', this)">
+          <div class="skill-card">
             <div class="skill-top">
               <span class="skill-name">good-morning</span>
-              <a href="https://gm.trifle.life" class="skill-link" target="_blank" rel="noopener" onclick="event.stopPropagation()">play &rarr;</a>
+              <a href="https://gm.trifle.life" class="skill-link" target="_blank" rel="noopener">play &rarr;</a>
             </div>
             <p class="skill-desc">Daily G+M word pairs. Creative compounds, scoring, streaks.</p>
-            <code class="skill-cmd">clawdhub install trifle-labs/skills/good-morning</code>
+            <div class="install-tabs">
+              <div class="tab-row">
+                <button class="tab active" data-tab="clawdhub">clawdhub</button>
+                <button class="tab" data-tab="claude">claude-cli</button>
+                <button class="tab" data-tab="github">github</button>
+                <button class="copy-btn" onclick="copyCmd(this)">copy</button>
+              </div>
+              <code class="cmd" data-clawdhub="clawdhub install trifle-labs/skills/good-morning" data-claude="claude mcp add good-morning -- npx trifle-labs/skills/good-morning" data-github="git clone https://github.com/trifle-labs/skills && cd skills/good-morning">clawdhub install trifle-labs/skills/good-morning</code>
+            </div>
           </div>
         </div>
 
         <h3 class="skill-category">Productivity</h3>
         <div class="skills-grid">
-          <div class="skill-card" onclick="copyInstall('clawdhub install trifle-labs/skills/email-mentions', this)">
+          <div class="skill-card">
             <span class="skill-name">email-mentions</span>
             <p class="skill-desc">Gmail monitoring with prompt injection defense and trust levels.</p>
-            <code class="skill-cmd">clawdhub install trifle-labs/skills/email-mentions</code>
+            <div class="install-tabs">
+              <div class="tab-row">
+                <button class="tab active" data-tab="clawdhub">clawdhub</button>
+                <button class="tab" data-tab="claude">claude-cli</button>
+                <button class="tab" data-tab="github">github</button>
+                <button class="copy-btn" onclick="copyCmd(this)">copy</button>
+              </div>
+              <code class="cmd" data-clawdhub="clawdhub install trifle-labs/skills/email-mentions" data-claude="claude mcp add email-mentions -- npx trifle-labs/skills/email-mentions" data-github="git clone https://github.com/trifle-labs/skills && cd skills/email-mentions">clawdhub install trifle-labs/skills/email-mentions</code>
+            </div>
           </div>
 
-          <div class="skill-card" onclick="copyInstall('clawdhub install trifle-labs/skills/github-mentions', this)">
+          <div class="skill-card">
             <span class="skill-name">github-mentions</span>
             <p class="skill-desc">Track @mentions, assigned issues, and PRs across your orgs.</p>
-            <code class="skill-cmd">clawdhub install trifle-labs/skills/github-mentions</code>
+            <div class="install-tabs">
+              <div class="tab-row">
+                <button class="tab active" data-tab="clawdhub">clawdhub</button>
+                <button class="tab" data-tab="claude">claude-cli</button>
+                <button class="tab" data-tab="github">github</button>
+                <button class="copy-btn" onclick="copyCmd(this)">copy</button>
+              </div>
+              <code class="cmd" data-clawdhub="clawdhub install trifle-labs/skills/github-mentions" data-claude="claude mcp add github-mentions -- npx trifle-labs/skills/github-mentions" data-github="git clone https://github.com/trifle-labs/skills && cd skills/github-mentions">clawdhub install trifle-labs/skills/github-mentions</code>
+            </div>
           </div>
         </div>
 

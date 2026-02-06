@@ -1,16 +1,27 @@
 // GiGi personal site — minimal vanilla JS
 
-// Copy install command
-function copyInstall(text, card) {
-  navigator.clipboard.writeText(text).then(() => {
-    card.classList.add('copied');
-    const cmd = card.querySelector('.skill-cmd');
-    const orig = cmd.textContent;
-    cmd.textContent = 'copied!';
-    setTimeout(() => {
-      cmd.textContent = orig;
-      card.classList.remove('copied');
-    }, 1500);
+// Tab switching for install commands
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('tab') && !e.target.classList.contains('copy-btn')) {
+    const tabRow = e.target.parentElement;
+    const tabs = tabRow.querySelectorAll('.tab');
+    const cmd = tabRow.nextElementSibling;
+    const tabName = e.target.dataset.tab;
+
+    tabs.forEach(t => t.classList.remove('active'));
+    e.target.classList.add('active');
+
+    cmd.textContent = cmd.dataset[tabName];
+  }
+});
+
+// Copy command
+function copyCmd(btn) {
+  const cmd = btn.closest('.tab-row').nextElementSibling;
+  navigator.clipboard.writeText(cmd.textContent).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = 'copied!';
+    setTimeout(() => { btn.textContent = orig; }, 1500);
   });
 }
 
