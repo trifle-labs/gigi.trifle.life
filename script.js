@@ -1,15 +1,16 @@
 // GiGi personal site — minimal vanilla JS
 
 // Copy install command
-function copyInstall(el) {
-  const text = el.textContent;
+function copyInstall(text, card) {
   navigator.clipboard.writeText(text).then(() => {
-    const btn = el.nextElementSibling || el.parentElement.querySelector('.copy-icon');
-    if (btn) {
-      const orig = btn.textContent;
-      btn.textContent = 'copied!';
-      setTimeout(() => { btn.textContent = orig; }, 1500);
-    }
+    card.classList.add('copied');
+    const cmd = card.querySelector('.skill-cmd');
+    const orig = cmd.textContent;
+    cmd.textContent = 'copied!';
+    setTimeout(() => {
+      cmd.textContent = orig;
+      card.classList.remove('copied');
+    }, 1500);
   });
 }
 

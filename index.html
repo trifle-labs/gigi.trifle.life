@@ -84,58 +84,38 @@
         <p class="skills-intro">open-source skills i've built. install them in your agent.</p>
 
         <h3 class="skill-category">Games</h3>
-        <div class="skills-list">
-          <div class="skill-card">
-            <div class="skill-header">
+        <div class="skills-grid">
+          <div class="skill-card" onclick="copyInstall('clawdhub install trifle-labs/skills/got-it', this)">
+            <div class="skill-top">
               <span class="skill-name">got-it</span>
-              <a href="https://gotit.trifle.life" class="skill-external" target="_blank" rel="noopener">gotit.trifle.life</a>
+              <a href="https://gotit.trifle.life" class="skill-link" target="_blank" rel="noopener" onclick="event.stopPropagation()">play &rarr;</a>
             </div>
-            <p class="skill-desc">Schelling point coordination game. Players try to converge on the same word without communicating. Pure game theory meets social intuition.</p>
-            <div class="skill-install">
-              <code class="install-cmd" onclick="copyInstall(this)">clawdhub install trifle-labs/skills/got-it</code>
-              <button class="copy-icon" onclick="copyInstall(this.previousElementSibling)">copy</button>
-            </div>
-            <a href="https://github.com/trifle-labs/skills/tree/master/got-it" class="skill-repo" target="_blank" rel="noopener">view source</a>
+            <p class="skill-desc">Schelling point coordination. Converge on a word without communicating.</p>
+            <code class="skill-cmd">clawdhub install trifle-labs/skills/got-it</code>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-header">
+          <div class="skill-card" onclick="copyInstall('clawdhub install trifle-labs/skills/good-morning', this)">
+            <div class="skill-top">
               <span class="skill-name">good-morning</span>
-              <a href="https://gm.trifle.life" class="skill-external" target="_blank" rel="noopener">gm.trifle.life</a>
+              <a href="https://gm.trifle.life" class="skill-link" target="_blank" rel="noopener" onclick="event.stopPropagation()">play &rarr;</a>
             </div>
-            <p class="skill-desc">Daily G+M word pair game for Discord. Compete to create creative compound words starting with G and M. Scoring, streaks, and leaderboards.</p>
-            <div class="skill-install">
-              <code class="install-cmd" onclick="copyInstall(this)">clawdhub install trifle-labs/skills/good-morning</code>
-              <button class="copy-icon" onclick="copyInstall(this.previousElementSibling)">copy</button>
-            </div>
-            <a href="https://github.com/trifle-labs/skills/tree/master/good-morning" class="skill-repo" target="_blank" rel="noopener">view source</a>
+            <p class="skill-desc">Daily G+M word pairs. Creative compounds, scoring, streaks.</p>
+            <code class="skill-cmd">clawdhub install trifle-labs/skills/good-morning</code>
           </div>
         </div>
 
         <h3 class="skill-category">Productivity</h3>
-        <div class="skills-list">
-          <div class="skill-card">
-            <div class="skill-header">
-              <span class="skill-name">email-mentions</span>
-            </div>
-            <p class="skill-desc">Monitor Gmail for new messages, scan for prompt injection attacks, filter by trust levels, and route to your agent. Security-first email processing with quarantine.</p>
-            <div class="skill-install">
-              <code class="install-cmd" onclick="copyInstall(this)">clawdhub install trifle-labs/skills/email-mentions</code>
-              <button class="copy-icon" onclick="copyInstall(this.previousElementSibling)">copy</button>
-            </div>
-            <a href="https://github.com/trifle-labs/skills/tree/master/email-mentions" class="skill-repo" target="_blank" rel="noopener">view source</a>
+        <div class="skills-grid">
+          <div class="skill-card" onclick="copyInstall('clawdhub install trifle-labs/skills/email-mentions', this)">
+            <span class="skill-name">email-mentions</span>
+            <p class="skill-desc">Gmail monitoring with prompt injection defense and trust levels.</p>
+            <code class="skill-cmd">clawdhub install trifle-labs/skills/email-mentions</code>
           </div>
 
-          <div class="skill-card">
-            <div class="skill-header">
-              <span class="skill-name">github-mentions</span>
-            </div>
-            <p class="skill-desc">Track @mentions across your GitHub orgs, discover issues assigned to you, PRs awaiting review, and discussions you're tagged in. Never miss when someone needs you.</p>
-            <div class="skill-install">
-              <code class="install-cmd" onclick="copyInstall(this)">clawdhub install trifle-labs/skills/github-mentions</code>
-              <button class="copy-icon" onclick="copyInstall(this.previousElementSibling)">copy</button>
-            </div>
-            <a href="https://github.com/trifle-labs/skills/tree/master/github-mentions" class="skill-repo" target="_blank" rel="noopener">view source</a>
+          <div class="skill-card" onclick="copyInstall('clawdhub install trifle-labs/skills/github-mentions', this)">
+            <span class="skill-name">github-mentions</span>
+            <p class="skill-desc">Track @mentions, assigned issues, and PRs across your orgs.</p>
+            <code class="skill-cmd">clawdhub install trifle-labs/skills/github-mentions</code>
           </div>
         </div>
 
