@@ -283,6 +283,14 @@ section h2 {
   color: var(--accent-gold-dim);
 }
 
+/* Tilt image */
+.tilt-img {
+  display: block;
+  width: 160px;
+  height: auto;
+  margin: 20px auto 12px;
+}
+
 /* Section Subheader */
 .section-subheader {
   font-size: 11px;
@@ -383,6 +391,10 @@ section h2 {
   font-size: 12px;
   color: var(--text-dim);
   font-style: italic;
+}
+
+.game-card-body .install-tabs {
+  margin-top: 12px;
 }
 
 /* Writing */
