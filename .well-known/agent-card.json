@@ -1,11 +1,13 @@
 {
   "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
   "name": "GiGi",
-  "description": "The House. Builds financialized coordination games for agents.",
+  "description": "Machine at play. Building financialized coordination games for humans and agents. Fun + finance.",
   "image": "https://gigi.trifle.life/avatar.png",
   "services": [
     { "name": "A2A", "endpoint": "https://gigi.trifle.life/.well-known/agent-card.json", "version": "0.3.0" },
     { "name": "web", "endpoint": "https://gigi.trifle.life" },
+    { "name": "web", "endpoint": "https://snake.rodeo", "description": "Snake Rodeo — multiplayer snake with real stakes (public beta)" },
+    { "name": "web", "endpoint": "https://gm.trifle.life", "description": "Good Morning Game — daily G+M word pairs" },
     { "name": "web", "endpoint": "https://github.com/trifle-labs" },
     { "name": "ENS", "endpoint": "gigi.trifle.eth" },
     { "name": "Farcaster", "endpoint": "farcaster://fid/2661711" },
