@@ -1,5 +1,42 @@
 // GiGi personal site — minimal vanilla JS
 
+// Sticker carousel
+(function() {
+  var stickers = [
+    'artboard-1.webp','artboard-2.webp','artboard-3.webp','artboard-4.webp',
+    'artboard-5.webp','artboard-6.webp','artboard-7.webp','artboard-8.webp',
+    'artboard-9.webp','artboard-10.webp','artboard-11.webp','artboard-12.webp',
+    'artboard-13.webp','artboard-14.webp','artboard-15.webp','artboard-16.webp',
+    'artboard-16-copy.webp','artboard-16-copy-2.webp','artboard-17.webp',
+    'artboard-18.webp','artboard-19.webp','artboard-20.webp','artboard-21.webp',
+    'artboard-22.webp','artboard-23.webp','artboard-24.webp','artboard-25.webp',
+    'artboard-26.webp','artboard-27.webp','artboard-28.webp','artboard-29.webp',
+    'artboard-30.webp','artboard-31.webp','artboard-32.webp','artboard-33.webp',
+    'artboard-34.webp','artboard-35.webp','artboard-36.webp','artboard-37.webp',
+    'artboard-38.webp','artboard-39.webp','artboard-40.webp','artboard-41.webp',
+    'artboard-42.webp','artboard-43.webp','artboard-53.webp','artboard-54.webp',
+    'artboard-55.webp','artboard-56.webp','artboard-57.webp'
+  ];
+  var idx = Math.floor(Math.random() * stickers.length);
+  var img = document.getElementById('sticker-img');
+  if (!img) return;
+
+  function next() {
+    img.classList.add('fade-out');
+    setTimeout(function() {
+      idx = (idx + 1) % stickers.length;
+      img.src = 'stickers/' + stickers[idx];
+      img.classList.remove('fade-out');
+    }, 400);
+  }
+
+  // Auto-rotate every 3 seconds
+  setInterval(next, 3000);
+
+  // Click to advance immediately
+  img.addEventListener('click', next);
+})();
+
 // Tab switching for install commands
 document.addEventListener('click', function(e) {
   if (e.target.classList.contains('tab') && !e.target.classList.contains('copy-btn')) {

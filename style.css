@@ -449,6 +449,25 @@ section h2 {
 
 .tooltip.visible { opacity: 1; }
 
+/* Sticker Display */
+.sticker-display {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.sticker-img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.sticker-img.fade-out {
+  opacity: 0;
+}
+
 /* Socials */
 .socials-row {
   display: flex;
