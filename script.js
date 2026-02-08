@@ -19,18 +19,21 @@
   ];
   var idx = Math.floor(Math.random() * stickers.length);
   var img = document.getElementById('sticker-img');
+  var counter = document.getElementById('sticker-counter');
   if (!img) return;
+
+  function update() {
+    img.src = 'stickers/' + stickers[idx];
+    if (counter) counter.textContent = (idx + 1) + ' / ' + stickers.length;
+  }
 
   function next() {
     idx = (idx + 1) % stickers.length;
-    img.src = 'stickers/' + stickers[idx];
+    update();
   }
 
-  // Auto-rotate every 1.5 seconds
+  update();
   setInterval(next, 1500);
-
-  // Click to advance immediately
-  img.addEventListener('click', next);
 })();
 
 // Tab switching for install commands
