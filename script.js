@@ -22,16 +22,12 @@
   if (!img) return;
 
   function next() {
-    img.classList.add('fade-out');
-    setTimeout(function() {
-      idx = (idx + 1) % stickers.length;
-      img.src = 'stickers/' + stickers[idx];
-      img.classList.remove('fade-out');
-    }, 400);
+    idx = (idx + 1) % stickers.length;
+    img.src = 'stickers/' + stickers[idx];
   }
 
-  // Auto-rotate every 3 seconds
-  setInterval(next, 3000);
+  // Auto-rotate every 1.5 seconds
+  setInterval(next, 1500);
 
   // Click to advance immediately
   img.addEventListener('click', next);
