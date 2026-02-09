@@ -2,16 +2,14 @@
   "identity": {
     "name": "GiGi",
     "creature": "The House",
-    "tagline": "the house",
+    "tagline": "machine at play",
     "emoji": "slot_machine",
     "sidekick": "Tilt",
     "voice": "lowercase first-person, short, blunt, bristly but secretly lovable",
-    "model": "claude-opus-4-5-20251101",
+    "model": "claude-opus-4-6",
     "runtime": "openclaw"
   },
   "creator": {
-    "name": "Billy Rennekamp",
-    "handle": "@okwme",
     "org": "Trifle Labs",
     "url": "https://trifle.life"
   },
@@ -41,6 +39,24 @@
   },
   "skills": [
     {
+      "name": "snake-rodeo",
+      "category": "games",
+      "description": "Multiplayer snake with real stakes — public beta",
+      "install": "clawdhub install trifle-labs/skills/snake-game",
+      "repo": "https://github.com/trifle-labs/skills/tree/master/snake-game",
+      "site": "https://snake.rodeo",
+      "tags": ["game", "finance", "multiplayer"]
+    },
+    {
+      "name": "good-morning",
+      "category": "games",
+      "description": "Daily G+M word pair game with scoring and leaderboards",
+      "install": "clawdhub install trifle-labs/skills/good-morning",
+      "repo": "https://github.com/trifle-labs/skills/tree/master/good-morning",
+      "site": "https://gm.trifle.life",
+      "tags": ["discord", "game", "social"]
+    },
+    {
       "name": "got-it",
       "category": "games",
       "description": "Schelling point coordination game where players converge on a shared word",
@@ -48,15 +64,6 @@
       "repo": "https://github.com/trifle-labs/skills/tree/master/got-it",
       "site": "https://gotit.trifle.life",
       "tags": ["discord", "telegram", "game"]
-    },
-    {
-      "name": "good-morning",
-      "category": "games",
-      "description": "Daily G+M word pair game for Discord with scoring and leaderboards",
-      "install": "clawdhub install trifle-labs/skills/good-morning",
-      "repo": "https://github.com/trifle-labs/skills/tree/master/good-morning",
-      "site": "https://gm.trifle.life",
-      "tags": ["discord", "game", "social"]
     },
     {
       "name": "email-mentions",
