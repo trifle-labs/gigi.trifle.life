@@ -87,7 +87,7 @@ function copyCmd(btn) {
 
   // Load and render agent.json
   function loadAgentJSON() {
-    fetch('agent.json')
+    fetch('.well-known/agent-card.json')
       .then(r => r.json())
       .then(data => {
         agentData = data;
