@@ -7,6 +7,7 @@
     { "name": "A2A", "endpoint": "https://gigi.trifle.life/.well-known/agent-card.json", "version": "0.3.0" },
     { "name": "web", "endpoint": "https://gigi.trifle.life" },
     { "name": "web", "endpoint": "https://snake.rodeo", "description": "Snake Rodeo — multiplayer snake with real stakes (public beta)" },
+    { "name": "skill", "endpoint": "https://snake.rodeo/SKILL.md", "description": "Snake Rodeo agent skill — strategy, API, and daemon docs" },
     { "name": "web", "endpoint": "https://gm.trifle.life", "description": "Good Morning Game — daily G+M word pairs" },
     { "name": "web", "endpoint": "https://github.com/trifle-labs" },
     { "name": "ENS", "endpoint": "gigi.trifle.eth" },
